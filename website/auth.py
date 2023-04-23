@@ -4,7 +4,6 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
 from flask_login import login_user, login_required, logout_user, current_user
 
-
 auth = Blueprint('auth', __name__)
 
 
@@ -33,6 +32,11 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('auth.login'))
+
+@auth.route('/account', methods=['GET', 'POST'])
+@login_required
+def account():
+    return render_template("account.html", user=current_user, name=current_user.first_name, number=current_user.id, lockernumber=current_user.lockernum)
 
 
 @auth.route('/sign-up', methods=['GET', 'POST'])
@@ -64,3 +68,31 @@ def sign_up():
             return redirect(url_for('views.home'))
 
     return render_template("sign_up.html", user=current_user)
+
+@auth.route('/delete-user', methods=['GET', 'POST'])
+def delete_user(user=current_user):
+    db.session.delete(user)
+    db.session.commit()
+    logout_user()
+    flash('Account deleted.', category='success')
+    return redirect(url_for('auth.login'))
+
+@auth.route('/changePass', methods=['GET', 'POST'])
+def pass_change(user=current_user):
+    email = current_user.email
+    first_name = current_user.first_name
+
+    if request.method == 'POST':
+        password1 = request.form.get('password1')
+        password2 = request.form.get('password2')
+
+        if password1 != password2:
+            flash('Passwords don\'t match.', category='error')
+        elif len(password1) < 7:
+            flash('Password must be at least 7 characters.', category='error')
+        else:
+            this_user = current_user(email=email, first_name=first_name, password=generate_password_hash(password1, method='sha256'))
+            db.session.add(this_user)
+            db.session.commit()
+            flash('Password changed!', category='success')
+            return redirect(url_for('views.home'))

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+<title>{% block title %}My Locker{% endblock %}</title>
+{% block content %}
+<br />
+<h1 align="center">Locker #1</h1>
+</ul>
+    <!-<textarea name="note" id="note" class="form-control"></textarea>
+        <br />
+        <div align="center">
+            <form action="/OpenButton">
+                <button type="submit" class="btn btn-primary">Open Door</button>
+            </form>
+
+            <div><br></div>
+            
+            <form action="/CloseButton">
+                <button type="submit" class="btn btn-primary">Close Door</button>
+            </form>
+            <div><br></div>
+            <a href="/templock1close" class="btn btn-primary">Unregister</a>
+        </div>
+{% endblock %}
