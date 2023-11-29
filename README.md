@@ -26,13 +26,14 @@ Watch the usage Demo video on YouTube: [Click here](https://www.youtube.com/shor
 
 ### Installation and Dependencies
 
-Before you begin, ensure you have the following software installed on your machine:
+Make sure you have Python installed. If not, download and install it from [Python Official Website](https://www.python.org/).  
 
-- [Node.js](https://nodejs.org/) (version 16.2.0 or higher)
-- [npm](https://www.npmjs.com/) (comes with Node.js)
-- [Visual Studio](https://visualstudio.microsoft.com/) (version 2019 or compatible)
-- [Visual Studio Code](https://code.visualstudio.com/) (optional for code editing)
-- [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+To install the required Python packages, run the following command in your terminal or command prompt:  
+
+pip install Flask   
+pip install Flask-SQLAlchemy   
+pip install Flask-Login   
+pip install pigpio    
   
 ### Installation
 Follow these steps to set up and run the project:
