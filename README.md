@@ -27,7 +27,8 @@ Watch the usage Demo video on YouTube: [Click here](https://www.youtube.com/shor
 ### Installation and Dependencies
 
 ### Locker
-Touchless locker is reliant on using Raspberry Pi GPIO controls.  Also these specific pieces of hardware for the entire thing to function as intended. 
+Touchless locker is reliant on using Raspberry Pi GPIO controls.  
+Also these specific pieces of hardware for the entire thing to function as intended. 
 
 1. Raspberry Pi 4 is what the current configuration is meant for.
 2. Raspberry Pi Pico W can be configured.
