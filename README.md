@@ -1,14 +1,11 @@
 ### Touchless Locker
 
-
-
 The Touchless Locker System is an innovative project designed in response to the challenges posed by the COVID-19 pandemic.   
 This system utilizes a web-based platform, enabling users to register and manage individual lockers without physical interaction.   
-Notably, each locker is equipped with UV-cleaning technology to ensure a high standard of hygiene and safety.  
-
+Notably, each locker is equipped with UV-cleaning technology to ensure a high standard of hygiene and safety.    
 
 1. **Web-Based Locker Registration:**
-   - Secure web-based platform for user registration and locker management.
+   - Web-based platform for user registration and locker management.
    - Facilitates a touchless experience, aligning with health and safety guidelines.
 
 2. **Touchless Control Mechanism:**
@@ -18,6 +15,10 @@ Notably, each locker is equipped with UV-cleaning technology to ensure a high st
 3. **UV-Cleaning Technology:**
    - Integration of UV-cleaning technology within each locker for enhanced hygiene.
    - Automated UV-cleaning cycles initiated after each use, ensuring a sanitized environment.
+
+4. **Physical Locking Mechanism:**    
+   - Integrated a physical sliding bolt lock that secures the locker door in place.  
+   - Triggers upon timeout or user checkouts/closing.  
 
 ### Usage Video
 
