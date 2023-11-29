@@ -7,14 +7,17 @@ This system utilizes a web-based platform, enabling users to register and manage
 Notably, each locker is equipped with UV-cleaning technology to ensure a high standard of hygiene and safety.  
 
 
-**Add Medicine and Entries:** 
-Easily create new types of medicines and corresponding entries for accurate tracking.
+1. **Web-Based Locker Registration:**
+   - Secure web-based platform for user registration and locker management.
+   - Facilitates a touchless experience, aligning with health and safety guidelines.
 
-**Edit Information:** 
-Make necessary adjustments to medicine details and entries to keep information up to date.
+2. **Touchless Control Mechanism:**
+   - Utilizes advanced RFID or Bluetooth technology for touchless communication between user devices and locker hardware.
+   - Allows users to open, close, and manage lockers via the web interface without physical interaction.
 
-**Delete Medicine and Entries:** 
-Remove outdated or no longer relevant medicine and corresponding entries.
+3. **UV-Cleaning Technology:**
+   - Integration of UV-cleaning technology within each locker for enhanced hygiene.
+   - Automated UV-cleaning cycles initiated after each use, ensuring a sanitized environment.
 
 ### Usage Video
 
