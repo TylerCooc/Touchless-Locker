@@ -22,7 +22,7 @@ Notably, each locker is equipped with UV-cleaning technology to ensure a high st
 
 ### Usage Video
 
-Watch the usage Demo video on YouTube: [Click here](https://www.youtube.com/watch?v=FYnisj7iD2A).
+Watch the usage Demo video on YouTube: [Click here](https://www.youtube.com/shorts/aMTrarnIxpA).
 
 ### Installation and Dependencies
 
